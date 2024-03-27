@@ -1,0 +1,30 @@
+Bug Title: Incorrect Currency Conversion
+
+Bug Description:
+In a financial management software application, there is a module responsible for currency conversion. Users have reported that when converting from Euro (EUR) to US Dollar (USD), the conversion rate applied is incorrect. Upon investigation, it was found that the software is using an outdated exchange rate dataset, causing inaccurate conversions. As a result, users are experiencing discrepancies in their financial reports and calculations.
+
+Steps to Reproduce:
+
+Open the financial management software.
+Navigate to the currency conversion module.
+Select Euro (EUR) as the source currency and US Dollar (USD) as the target currency.
+Enter an amount to convert.
+Verify the converted amount against the current exchange rate.
+Expected Behavior:
+The software should accurately convert currency based on the latest exchange rates retrieved from a reliable source.
+
+Actual Behavior:
+The software is using outdated exchange rate data, leading to inaccurate currency conversion.
+
+Severity: Medium
+
+Impact:
+
+Financial reports may show incorrect values, potentially leading to financial discrepancies.
+Users relying on accurate currency conversion for business transactions may face financial losses or errors in accounting.
+Recommended Solution:
+
+Update the software to fetch real-time exchange rates from a reliable API or service.
+Implement a mechanism to periodically update exchange rate data within the software to ensure accuracy.
+Notify users about the bug and provide a temporary workaround until the fix is deployed.
+Note: This bug highlights the importance of regularly updating external data sources and ensuring the accuracy of information used within financial software applications.
